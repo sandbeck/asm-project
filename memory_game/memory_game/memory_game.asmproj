@@ -74,6 +74,9 @@
     <Compile Include="display.asm">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="input.asm">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="main.asm">
       <SubType>Code</SubType>
     </Compile>

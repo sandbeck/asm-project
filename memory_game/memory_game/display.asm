@@ -18,7 +18,17 @@ display_init:
 
 	pop		temp
 	ret
-	
+
+; Displaying a sequence of bytes
+; params:
+;	start - start address (2 bytes)
+;	length - how many bytes to display starting from start addr
+; returns: null
+display_sequence:
+	ret
+
+display_confirmation:
+	ret	
 
 display_welcome:
 	push	ZH
