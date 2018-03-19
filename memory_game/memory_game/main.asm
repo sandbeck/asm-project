@@ -67,8 +67,7 @@ verify_next:						;         do {
 	call	input_get
 	pop		temp
 	cp		temp, r17				;             if (input != expected) {
-	brne	failed					;                 failed = true
-									;				  break
+	brne	failed					;                 failed = true; break
 									;             }
 	cp		input_no, round_no		;         } while (inputs from user < round)
 	brlo	verify_next
@@ -77,13 +76,10 @@ verify_next:						;         do {
 	rjmp	round_begin				;     } while (!failed)
 failed:
 	rjmp	start					; }
-
-
-
-random_sequence:
 	
 
 ; includes
 .include "display.asm"
 .include "delay.asm"
 .include "input.asm"
+.include "random.asm"
