@@ -6,7 +6,12 @@
 ;
 
 
-; Replace with your application code
 start:
-    inc r16
-    rjmp start
+	call	display_init
+	call	display_welcome
+end:
+	rjmp	end
+
+; includes
+.include "display.asm"
+.include "delay.asm"
